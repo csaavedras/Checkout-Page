@@ -1,5 +1,35 @@
+:root {
+  --title_clr: #4e5150;
+  --title_products_clr: #4e5150;
+  --price_products_clr: #f2994a;
+
+  --gray1_clr: #333333;
+  --gray2_clr: #4f4f4f;
+  --gray3_clr: #828282;
+  --gray4_clr: #bdbdbd;
+  --gray5_clr: #4f4f4f;
+  --gray6_clr: #f2f2f2;
+
+  --web_font: 'Poppins';
+}
+
+/* MARK: BEM Methodology 
+  Block  ex: .form {}
+  Element ex: .form__input / .form__button / .form__link {}
+  Modifier ex: .form__button--primary / .form__button-secondary {}
+
+*/
+
+/* MARK: Property declaration order: order: 
+  position
+  box-model
+  typography
+  visual
+  other.
+*/
+
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--web_font, sans-serif);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
