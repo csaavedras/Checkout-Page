@@ -13,21 +13,6 @@
   --web_font: 'Poppins';
 }
 
-/* MARK: BEM Methodology 
-  Block  ex: .form {}
-  Element ex: .form__input / .form__button / .form__link {}
-  Modifier ex: .form__button--primary / .form__button-secondary {}
-
-*/
-
-/* MARK: Property declaration order: order: 
-  position
-  box-model
-  typography
-  visual
-  other.
-*/
-
 body {
   font-family: var(--web_font, sans-serif);
   margin: 0;
@@ -49,33 +34,51 @@ img {
   border-radius: 0.75rem;
   object-fit: cover;
 }
-main {
-  align-self: center;
+input {
+  background-color: transparent;
+  outline: 0;
+  color: var(--gray3_clr);
+  font-size: 0.75rem;
+
+  /* Custom style  */
+  border: 1px solid var(--gray3_clr);
+  border-radius: 0.75em;
+  padding: 0.8em 0 0.8em 2.5em;
+  margin-bottom: 0.5em;
+}
+label {
+  font-size: 0.625rem;
+  color: var(--gray2_clr);
 }
 
+main {
+  padding: 0 0.5em;
+}
 /* Card Product Section */
 .card_products {
   background-color: var(--gray6_clr);
   border-radius: 0.75rem;
   display: flex;
-  place-items: center;
+  /* place-items: center; */
   padding-top: 2em;
   padding-bottom: 1em;
+  align-items: center;
   flex-direction: column;
   gap: 2em;
-  min-width: 350px;
-  max-width: 400px;
 }
 .products_image {
   display: flex;
-  max-width: 162px;
-  height: 140px;
+  width: 40%;
+  max-width: 15.625rem;
+  height: 8.75rem;
   background-color: red;
   border-radius: 0.75rem;
 }
 .show_products {
   display: flex;
   gap: 2em;
+  width: 90%;
+  height: 100%;
 }
 .products_info {
   width: 60%;
@@ -123,4 +126,42 @@ main {
   border-top: 1px solid var(--gray4_clr);
   display: flex;
   justify-content: space-between;
+}
+
+/* Form Checkout Section */
+form {
+  margin-top: 1em;
+}
+.form__contact_information {
+  display: flex;
+  flex-direction: column;
+}
+.form__title_section {
+  font-size: 0.875rem;
+}
+.wrap_icon_input {
+  position: relative;
+  margin: 10px 0;
+}
+.icon_input {
+  position: absolute;
+  top: 0.3em;
+  left: 0.5em;
+  height: 100%;
+}
+.form_input {
+  width: 95%;
+}
+.fa-solid {
+  color: var(--gray3_clr);
+}
+.wrap_container {
+  width: 100%;
+  display: flex;
+  gap: 3em;
+  padding: 0 0.5em 0 0;
+}
+.wrap_checkbox {
+  display: flex;
+  align-items: center;
 }

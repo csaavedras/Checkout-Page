@@ -21,6 +21,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
 
     <title>Checkout Page</title>
   </head>
@@ -77,7 +81,61 @@
           </div>
         </div>
       </section>
-      <section></section>
+      <section class="card_products">
+        <form class="form">
+          <div class="form__contact_information">
+            <h2 class="form__title_section">Contact infomation</h2>
+            <label for="">E-mail</label>
+            <div class="wrap_icon_input">
+              <span class="icon_input"><i class="fa-solid fa-envelope"></i></span>
+              <input class="form_input" type="mail" placeholder="Enter your email..." ></input>
+            </div>
+            <label for="">Phone </label>
+            <div class="wrap_icon_input">
+              <span class="icon_input"><i class="fa-solid fa-phone"></i></span>
+              <input class="form_input" type="mail" placeholder="Enter your phone" ></input>
+            </div>
+          </div>
+          <div class="form__shipping_address">
+            <h2 class="form__title_section">Shipping address</h2>
+            <label for="">Full name</label>
+            <div class="wrap_icon_input">
+              <span class="icon_input"><i class="fa-solid fa-user"></i></span>
+              <input class="form_input"  type="mail" placeholder="Camilo Saavedra" />
+            </div>
+            <label for="">Address</label>
+            <div class="wrap_icon_input">
+              <span class="icon_input"><i class="fa-solid fa-house"></i></span>
+              <input class="form_input" type="phone" placeholder="Your address.." />
+            </div>
+            <label for="">City</label>
+            <div class="wrap_icon_input">
+              <span class="icon_input"><i class="fa-solid fa-building"></i></span>
+              <input class="form_input" type="phone" placeholder="Your city.." />
+            </div>
+            <div class="wrap_container">
+                <div class="wrap_row">
+                  <label for="">Country</label>
+                  <div class="wrap_icon_input">
+                    <span class="icon_input"><i class="fa-solid fa-building"></i></span>
+                    <input class="form_input" type="phone" placeholder="Your country.." />
+                  </div>
+                </div>
+                <div class="wrap_row">
+                  <label for="">Postal code</label>
+                  <div class="wrap_icon_input">
+                    <span class="icon_input"><i class="fa-solid fa-building"></i></span>
+                    <input class="form_input" type="phone" placeholder="Your postal code.." />
+                  </div>
+                </div>
+            </div>
+            <div class="wrap_checkbox">
+              <input type="checkbox">
+              <label>Save this information for next time</label>
+            </div>
+          </div>
+        </form>
+      </section>
     </main>
   </body>
 </html>
