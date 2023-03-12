@@ -27,6 +27,7 @@ h1 {
   font-weight: 600;
   color: var(--title_clr);
   text-align: left;
+  padding-bottom: 10px;
 }
 img {
   width: 100%;
@@ -35,24 +36,33 @@ img {
   object-fit: cover;
 }
 input {
+  box-sizing: border-box;
   background-color: transparent;
-  outline: 0;
   color: var(--gray3_clr);
   font-size: 0.75rem;
 
-  /* Custom style  */
-  border: 1px solid var(--gray3_clr);
+
+  border: 1px solid var(--gray3_clr); 
   border-radius: 0.75em;
-  padding: 0.8em 0 0.8em 2.5em;
+  padding: 0.8em 0 0.8em .5em;
   margin-bottom: 0.5em;
+  width: 100%;
 }
+
 label {
   font-size: 0.625rem;
   color: var(--gray2_clr);
 }
+li {
+  list-style: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
 
-main {
-  padding: 0 0.5em;
+.seconds-info-form li:first-child input::placeholder {
+  color: black;
 }
 /* Card Product Section */
 .card_products {
@@ -70,7 +80,7 @@ main {
 .products_image {
   display: flex;
   width: 40%;
-  max-width: 15.625rem;
+  max-width: 12rem;
   height: 8.75rem;
   background-color: red;
   border-radius: 0.75rem;
@@ -86,7 +96,8 @@ main {
 }
 .products_name {
   color: var(--title_products_clr);
-  font-size: 0.75rem;
+  font-weight: 500;
+  font-size: 1rem;
   margin: 0;
 }
 .products_price {
@@ -116,54 +127,31 @@ main {
   width: 23px;
   display: flex;
   place-content: center;
+  cursor: pointer;
 }
 .number_count {
   color: var(--gray1_clr);
+  font-weight: bold;
 }
 .product_detail {
   width: 85%;
+  font-weight: bold;
 }
 .product__shipping {
-  border-top: 1px solid var(--gray4_clr);
+  border-top: 1.5px solid var(--gray4_clr);
   display: flex;
   justify-content: space-between;
 }
 
 /* Form Checkout Section */
-form {
-  width: 85%;
-  margin-top: 1em;
-}
-.form__contact_information {
+
+.form_container {
+  border-radius: 0.75rem;
   display: flex;
-  flex-direction: column;
-}
-.form__title_section {
-  font-size: 0.875rem;
-}
-.wrap_icon_input {
-  position: relative;
-  margin: 10px 0;
-}
-.icon_input {
-  position: absolute;
-  top: 0.3em;
-  left: 0.5em;
-  height: 100%;
-}
-.form_input {
-  width: 100%;
-}
-.fa-solid {
-  color: var(--gray3_clr);
-}
-.wrap_container {
-  width: 100%;
-  display: flex;
-  gap: 3em;
-  padding: 0 0.5em 0 0;
-}
-.wrap_checkbox {
-  display: flex;
+  padding-top: 2em;
+  padding-bottom: 1em;
+  margin-bottom: 2em;
   align-items: center;
+  flex-direction: column;
+  gap: 2em;
 }

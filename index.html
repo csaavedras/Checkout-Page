@@ -1,141 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1,
-  maximum-scale=5"
-    />
 
-    <link rel="icon" href="devchallenges.png" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1,
+  maximum-scale=5" />
 
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="https://devchallenges.io/"
-    />
+  <link rel="icon" href="devchallenges.png" />
+  <link rel="stylesheet" href="reset.css">
+  <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/" />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-    />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
 
-    <title>Checkout Page</title>
-  </head>
-  <body>
-    <header>
-      <h1>Checkout</h1>
-    </header>
-    <main>
-      <section class="card_products">
-        <div class="show_products">
-          <div class="products_image">
-            <img
-              src="https://i5.walmartimages.com/asr/f56d9db7-c721-4b98-8201-87690bf31d10.14307734fa4dfa70aa1257b92eb7adf9.jpeg"
-            />
-          </div>
-          <div class="products_info">
-            <h3 class="products_name">Vintage Backbag</h3>
-            <p class="products_price">
-              $54.99<span class="price_discount">$94.99</span>
-            </p>
-            <div class="product_count">
-              <div class="rect minus">-</div>
-              <div class="number_count"><p>1</p></div>
-              <div class="rect plus">+</div>
+  <title>Checkout Page</title>
+</head>
+
+<body>
+  <header>
+    <h1>Checkout</h1>
+  </header>
+  <main>
+    <section class="card_products">
+      <div class="show_products">
+        <div class="products_image">
+          <img
+            src="https://i5.walmartimages.com/asr/f56d9db7-c721-4b98-8201-87690bf31d10.14307734fa4dfa70aa1257b92eb7adf9.jpeg"
+            loading="lazy" />
+        </div>
+        <div class="products_info">
+          <h3 class="products_name">Vintage Backbag</h3>
+          <p class="products_price">
+            $54.99<span class="price_discount">$94.99</span>
+          </p>
+          <div class="product_count">
+            <div class="rect minus">-</div>
+            <div class="number_count">
+              <p>1</p>
             </div>
+            <div class="rect plus">+</div>
           </div>
         </div>
-        <div class="show_products">
-          <div class="products_image">
-            <img
-              src="https://i.linio.com/p/d7cc80742ce591c6d2f1f915d272dc2b-product.webp"
-            />
-          </div>
-          <div class="products_info">
-            <h3 class="products_name">Levi Shoes</h3>
-            <p class="products_price">
-              $74.99<span class="price_discount">$124.99</span>
-            </p>
-            <div class="product_count">
-              <div class="rect minus">-</div>
-              <div class="number_count"><p>1</p></div>
-              <div class="rect plus">+</div>
+      </div>
+      <div class="show_products">
+        <div class="products_image">
+          <img src="https://i.linio.com/p/d7cc80742ce591c6d2f1f915d272dc2b-product.webp" loading="lazy" />
+        </div>
+        <div class="products_info">
+          <h3 class="products_name">Levi Shoes</h3>
+          <p class="products_price">
+            $74.99<span class="price_discount">$124.99</span>
+          </p>
+          <div class="product_count">
+            <div class="rect minus">-</div>
+            <div class="number_count">
+              <p>1</p>
             </div>
+            <div class="rect plus">+</div>
           </div>
         </div>
-        <div class="product_detail">
-          <div class="product__shipping">
-            <p>Shipping</p>
-            <p>$19</p>
-          </div>
-          <div class="product__shipping">
-            <p>Total</p>
-            <p>$149.98</p>
-          </div>
+      </div>
+      <div class="product_detail">
+        <div class="product__shipping">
+          <p>Shipping</p>
+          <p>$19</p>
         </div>
-      </section>
-      <!-- <section class="card_products"> -->
-        <form class="form">
-          <div class="form__contact_information">
-            <h2 class="form__title_section">Contact infomation</h2>
-            <label for="">E-mail</label>
-            <div class="wrap_icon_input">
-              <span class="icon_input"><i class="fa-solid fa-envelope"></i></span>
-              <input class="form_input" type="mail" placeholder="Enter your email..." ></input>
-            </div>
-            <label for="">Phone </label>
-            <div class="wrap_icon_input">
-              <span class="icon_input"><i class="fa-solid fa-phone"></i></span>
-              <input class="form_input" type="mail" placeholder="Enter your phone" ></input>
-            </div>
-          </div>
-          <div class="form__shipping_address">
-            <h2 class="form__title_section">Shipping address</h2>
+        <div class="product__shipping">
+          <p>Total</p>
+          <p>$149.98</p>
+        </div>
+      </div>
+    </section>
+    <section class="form_container">
+      <form action="" style="width: 100%;">
+        <h4>Contact information</h4>
+        <ul>
+          <li>
+            <label for="">Email</label>
+            <input type="email" placeholder="Enter your email...">
+          </li>
+          <li>
+            <label for="">Phone</label>
+            <input type="tel" placeholder="Enter you phone...">
+          </li>
+        </ul>
+        <h4>Shipping address</h4>
+        <ul class="seconds-info-form">
+          <li>
             <label for="">Full name</label>
-            <div class="wrap_icon_input">
-              <span class="icon_input"><i class="fa-solid fa-user"></i></span>
-              <input class="form_input"  type="mail" placeholder="Camilo Saavedra" />
-            </div>
+            <input type="text" placeholder="Rodney Cotton">
+          </li>
+          <li>
             <label for="">Address</label>
-            <div class="wrap_icon_input">
-              <span class="icon_input"><i class="fa-solid fa-house"></i></span>
-              <input class="form_input" type="phone" placeholder="Your address.." />
-            </div>
+            <input type="text" placeholder="Your Address...">
+          </li>
+          <li>
             <label for="">City</label>
-            <div class="wrap_icon_input">
-              <span class="icon_input"><i class="fa-solid fa-building"></i></span>
-              <input class="form_input" type="phone" placeholder="Your city.." />
+            <input type="text" placeholder="Your city...">
+          </li>
+          <li style="display: flex; gap: 10px;">
+            <div style="flex: 1;">
+              <label for="">Country</label>
+              <input type="text" placeholder="Your city...">
             </div>
-            <div class="wrap_container">
-                <div class="wrap_row">
-                  <label for="">Country</label>
-                  <div class="wrap_icon_input">
-                    <span class="icon_input"><i class="fa-solid fa-building"></i></span>
-                    <input class="form_input" type="phone" placeholder="Your country.." />
-                  </div>
-                </div>
-                <div class="wrap_row">
-                  <label for="">Postal code</label>
-                  <div class="wrap_icon_input">
-                    <span class="icon_input"><i class="fa-solid fa-building"></i></span>
-                    <input class="form_input" type="phone" placeholder="Your postal code.." />
-                  </div>
-                </div>
+            <div style="flex: 1;">
+              <label for="">Postal Code</label>
+              <input type="text" placeholder="Your city...">
             </div>
-            <div class="wrap_checkbox">
-              <input type="checkbox">
-              <label>Save this information for next time</label>
-            </div>
-          </div>
-        </form>
-      <!-- </section> -->
-    </main>
-  </body>
+          </li>
+        </ul>
+      </form>
+    </section>
+  </main>
+</body>
+
 </html>
