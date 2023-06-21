@@ -2,6 +2,7 @@
   --title_clr: #4e5150;
   --title_products_clr: #4e5150;
   --price_products_clr: #f2994a;
+  --price_products_hover_clr: #da8c43;
 
   --gray1_clr: #333333;
   --gray2_clr: #4f4f4f;
@@ -22,12 +23,16 @@ body {
   flex-direction: column;
 }
 
+
 h1 {
   font-size: 1.5rem;
   font-weight: 600;
   color: var(--title_clr);
   text-align: left;
   padding-bottom: 10px;
+}
+h4 {
+  color: var(--gray1_clr);
 }
 img {
   width: 100%;
@@ -44,10 +49,13 @@ input {
 
   border: 1px solid var(--gray3_clr); 
   border-radius: 0.75em;
+  /* top | right | bottom | left */
   padding: 0.8em 0 0.8em .5em;
   margin-bottom: 0.5em;
   width: 100%;
 }
+
+
 
 label {
   font-size: 0.625rem;
@@ -60,9 +68,26 @@ ul {
   margin: 0;
   padding: 0;
 }
+button {
+  font-size: 16px;
+  background-color: var(--price_products_clr);
+  color: white;
+  font-weight: 500;
+  padding: 1em 3em;
+  border-radius: 12px;
+  float: right;
+  cursor: pointer;
+}
+button:hover {
+  background-color: var(--price_products_hover_clr);
+}
 
 .seconds-info-form li:first-child input::placeholder {
   color: black;
+}
+
+input::placeholder {
+  padding-left: 30px;
 }
 /* Card Product Section */
 .card_products {
@@ -72,7 +97,6 @@ ul {
   /* place-items: center; */
   padding-top: 2em;
   padding-bottom: 1em;
-  margin-bottom: 2em;
   align-items: center;
   flex-direction: column;
   gap: 2em;
@@ -154,4 +178,79 @@ ul {
   align-items: center;
   flex-direction: column;
   gap: 2em;
+}
+.align-items {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+.checkbox {
+  margin-bottom: 0;
+  margin-right: 5px;
+
+}
+
+.input_label {
+  font-weight: 600;
+  font-size: 10px;
+  color: var(--gray2_clr);
+  line-height: 12px;
+
+}
+.input_label_space {
+  margin-bottom: 5px;
+}
+.input_space {
+  margin-bottom: 10px;
+}
+.signature_footer {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--gray4_clr);
+  text-align: center;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  main {
+    display: flex;
+    gap: 10px ;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+  .card_products {
+    max-height: 500px;
+  }
+
+  
+}
+
+.input-icon {
+  position: relative; /* Necesario para posicionar el icono */
+}
+
+.input-icon input {
+  padding-right: 30px; /* Para hacer espacio para el icono */
+}
+
+.input-icon .material-icons {
+  position: absolute;
+  top: 45%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: var(--gray3_clr);
+}
+
+@media (min-width: 1200px) {
+  body {
+    justify-content: space-around;
+    align-items: center;
+  }
+  main {
+    width: 1100px;
+  }
+  
+  
 }
