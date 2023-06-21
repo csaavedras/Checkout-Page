@@ -1,0 +1,256 @@
+:root {
+  --title_clr: #4e5150;
+  --title_products_clr: #4e5150;
+  --price_products_clr: #f2994a;
+  --price_products_hover_clr: #da8c43;
+
+  --gray1_clr: #333333;
+  --gray2_clr: #4f4f4f;
+  --gray3_clr: #828282;
+  --gray4_clr: #bdbdbd;
+  --gray5_clr: #e0e0e0;
+  --gray6_clr: #f2f2f2;
+
+  --web_font: 'Poppins';
+}
+
+body {
+  font-family: var(--web_font, sans-serif);
+  margin: 0;
+  padding: 2em 1em;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--title_clr);
+  text-align: left;
+  padding-bottom: 10px;
+}
+h4 {
+  color: var(--gray1_clr);
+}
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.75rem;
+  object-fit: cover;
+}
+input {
+  box-sizing: border-box;
+  background-color: transparent;
+  color: var(--gray3_clr);
+  font-size: 0.75rem;
+
+
+  border: 1px solid var(--gray3_clr); 
+  border-radius: 0.75em;
+  /* top | right | bottom | left */
+  padding: 0.8em 0 0.8em .5em;
+  margin-bottom: 0.5em;
+  width: 100%;
+}
+
+
+
+label {
+  font-size: 0.625rem;
+  color: var(--gray2_clr);
+}
+li {
+  list-style: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+button {
+  font-size: 16px;
+  background-color: var(--price_products_clr);
+  color: white;
+  font-weight: 500;
+  padding: 1em 3em;
+  border-radius: 12px;
+  float: right;
+  cursor: pointer;
+}
+button:hover {
+  background-color: var(--price_products_hover_clr);
+}
+
+.seconds-info-form li:first-child input::placeholder {
+  color: black;
+}
+
+input::placeholder {
+  padding-left: 30px;
+}
+/* Card Product Section */
+.card_products {
+  background-color: var(--gray6_clr);
+  border-radius: 0.75rem;
+  display: flex;
+  /* place-items: center; */
+  padding-top: 2em;
+  padding-bottom: 1em;
+  align-items: center;
+  flex-direction: column;
+  gap: 2em;
+}
+.products_image {
+  display: flex;
+  width: 40%;
+  max-width: 12rem;
+  height: 8.75rem;
+  background-color: red;
+  border-radius: 0.75rem;
+}
+.show_products {
+  display: flex;
+  gap: 2em;
+  width: 90%;
+  height: 100%;
+}
+.products_info {
+  width: 60%;
+}
+.products_name {
+  color: var(--title_products_clr);
+  font-weight: 500;
+  font-size: 1rem;
+  margin: 0;
+}
+.products_price {
+  font-size: 0.875rem;
+  color: var(--price_products_clr);
+}
+.products_price span {
+  text-decoration: line-through;
+  color: var(--title_products_clr);
+  margin-left: 1em;
+}
+.product_count {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 122px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid var(--gray3_clr);
+  border-radius: 0.75rem;
+  margin-top: 2em;
+}
+.rect {
+  background-color: var(--gray5_clr);
+  color: var(--gray3_clr);
+  border-radius: 0.3rem;
+  width: 23px;
+  display: flex;
+  place-content: center;
+  cursor: pointer;
+}
+.number_count {
+  color: var(--gray1_clr);
+  font-weight: bold;
+}
+.product_detail {
+  width: 85%;
+  font-weight: bold;
+}
+.product__shipping {
+  border-top: 1.5px solid var(--gray4_clr);
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Form Checkout Section */
+
+.form_container {
+  border-radius: 0.75rem;
+  display: flex;
+  padding-top: 2em;
+  padding-bottom: 1em;
+  margin-bottom: 2em;
+  align-items: center;
+  flex-direction: column;
+  gap: 2em;
+}
+.align-items {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+.checkbox {
+  margin-bottom: 0;
+  margin-right: 5px;
+
+}
+
+.input_label {
+  font-weight: 600;
+  font-size: 10px;
+  color: var(--gray2_clr);
+  line-height: 12px;
+
+}
+.input_label_space {
+  margin-bottom: 5px;
+}
+.input_space {
+  margin-bottom: 10px;
+}
+.signature_footer {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--gray4_clr);
+  text-align: center;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  main {
+    display: flex;
+    gap: 10px ;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+  .card_products {
+    max-height: 500px;
+  }
+
+  
+}
+
+.input-icon {
+  position: relative; /* Necesario para posicionar el icono */
+}
+
+.input-icon input {
+  padding-right: 30px; /* Para hacer espacio para el icono */
+}
+
+.input-icon .material-icons {
+  position: absolute;
+  top: 45%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: var(--gray3_clr);
+}
+
+@media (min-width: 1200px) {
+  body {
+    justify-content: space-around;
+    align-items: center;
+  }
+  main {
+    width: 1100px;
+  }
+  
+  
+}
