@@ -74,21 +74,21 @@
       </div>
     </section>
     <section class="form_container">
-      <form action="" style="width: 100%;">
+      <form id="form" style="width: 100%;">
         <h4>Contact information</h4>
         <ul class="input_label">
           <li class="input_space">
             <label class="input_label_space" for="">Email</label>
             <div class="input-icon">
               <span class="material-icons md-18">mail</span>
-              <input class="" type="email" placeholder="Enter your email...">
+              <input class="" type="email" placeholder="Enter your email..." required>
             </div>
           </li>
           <li class="input_space">
              <label class="input_label_space" for="">Phone</label>
             <div class="input-icon">
               <span class="material-icons md-18">call</span>
-              <input type="tel" placeholder="Enter you phone...">
+              <input type="tel" placeholder="Enter you phone..." required>
             </div>
           </li>
         </ul>
@@ -98,21 +98,21 @@
             <label class="input_label_space" for="">Full name</label>
             <div class="input-icon">
               <span class="material-icons md-18">account_circle</span>                
-              <input type="text" placeholder="Rodney Cotton">
+              <input type="text" placeholder="Rodney Cotton" required>
             </div>
           </li>
           <li class="input_space">
             <label class="input_label_space" for="">Address</label>
             <div class="input-icon">
               <span class="material-icons md-18">home</span>
-              <input type="text" placeholder="Your Address...">
+              <input type="text" placeholder="Your Address..." required>
             </div>
           </li>
           <li class="input_space">
             <label class="input_label_space" for="">City</label>
             <div class="input-icon">
               <span class="material-icons md-18">location_city</span>
-              <input type="text" placeholder="Your city...">
+              <input type="text" placeholder="Your city..." required>
             </div>
           </li>
           <li class="input_space" style="display: flex; gap: 10px;">
@@ -120,27 +120,31 @@
               <label class="input_label_space" for="">Country</label>
               <div class="input-icon">
                 <span class="material-icons md-18">public</span>
-                <input type="text" placeholder="Your city...">
+                <select id="countries" name="country" required>
+                  <option value="">Your country..</option>
+                </select>
               </div>
             </div>
             <div style="flex: 1;">
               <label class="input_label_space" for="">Postal Code</label>
               <div class="input-icon">
                 <span class="material-icons md-18">markunread_mailbox</span>
-                <input type="text" placeholder="Your city...">
+                <input type="text" placeholder="Your postal code...">
               </div>
             </div>
           </li>
         </ul>          
         <label class="align-items input_label">
           <input class="checkbox" type="checkbox" id="cbox1" value="first_checkbox"> Save this information for next time </label><br>
-        <button>Continue</button>
+        <button type="submit" >Continue</button>
       </form>
+      <p id="log"></p>
     </section>
   </main>
   <footer>
     <p class="signature_footer">created by <a href="https://github.com/csaavedras" target="_blank">cisaa</a> - devChallenges.io</p>
   </footer>
+  <script src="./index.js"></script>
 </body>
 
 </html>
