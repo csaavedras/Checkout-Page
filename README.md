@@ -1,6 +1,6 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center">{Your project name}</h1>
+<h1 align="center">Checkout Page Clone</h1>
 
 <div align="center">
    Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
@@ -8,15 +8,15 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://www.figma.com/file/4B0x88GhiZvgVlcQPSQ73D/checkout-page-challenge?type=design&mode=design">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://cheery-kelpie-616f98.netlify.app">
       Solution
     </a>
     <span> | </span>
-    <a href="https://devchallenges.io/challenges/0J1NxxGhOUYVqihwegfO">
+    <a href="https://cheery-kelpie-616f98.netlify.app">
       Challenge
     </a>
   </h3>
@@ -36,22 +36,25 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![screenshot](https://cheery-kelpie-616f98.netlify.app/assets/Screenshot_desktop-mobile.png)
 
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
 - Where can I see your demo?
+  You can view my demo at https://cheery-kelpie-616f98.netlify.app. Here you can experience first-hand the features and functionality of project.
 - What was your experience?
+  During this project, I had an exciting and rewarding experience. Work hard at every stage of development.
+  The biggest challenge was styling the form along with the icons. It was the most difficult part of the project but I managed to find a feasible solution for the solution.
 - What have you learned/improved?
-- Your wisdom? :)
+  Throughout this project, I have learned a lot and improved in various areas. I gained more technical knowledge in creating HTML forms, formatting and adding new styles to the inputs. In addition to improving my skills to create responsive views.
 
 ### Built With
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
-- [React](https://reactjs.org/)
-- [Vue.js](https://vuejs.org/)
-- [Tailwind](https://tailwindcss.com/)
+- [HTML]
+- [CSS]
+- [Javascript]
 
 ## Features
 
@@ -59,32 +62,16 @@ Introduce your projects by taking a screenshot or a gif. Try to tell visitors a 
 
 This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/0J1NxxGhOUYVqihwegfO) was to build an application to complete the given user stories.
 
+Challenge: Create a checkout page following the design. You don’t need to use JS in this challenge but use correct input types and validation. Don’t look at the existing solution. Fulfill user stories below:
 
-## How To Use
-
-To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
-
-```bash
-# Clone this repository
-$ git clone https://github.com/your-user-name/your-project-name
-
-# Install dependencies
-$ npm install
-
-# Run the app
-$ npm start
-```
-
-## Acknowledgements
-
-<!-- This section should list any articles or add-ons/plugins that helps you to complete the project. This is optional but it will help you in the future. For exmpale -->
-
-- [Steps to replicate a design with only HTML and CSS](https://devchallenges-blogs.web.app/how-to-replicate-design/)
-- [Node.js](https://nodejs.org/)
-- [Marked - a markdown parser](https://github.com/chjj/marked)
+User story: I can see a page following the given design
+User story: I can input email, phone, full name, address, city, country, and postal code
+User story: I can input the number of items
+User story: I can select at least 3 countries from the dropdown
+User story: When I click submit button or press enter, I can see a warning if validation fails
+User story: When I click submit button or press enter, I can see a successful alert if validation succeeds
 
 ## Contact
 
-- Website [your-website.com](https://{your-web-site-link})
-- GitHub [@your-username](https://{github.com/your-usermame})
-- Twitter [@your-twitter](https://{twitter.com/your-username})
+- Website [csaavedras](https://github.com/csaavedras)
+- GitHub [@csaavedras](https://github.com/csaavedras)
