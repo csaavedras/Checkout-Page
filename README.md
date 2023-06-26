@@ -73,5 +73,5 @@ User story: When I click submit button or press enter, I can see a successful al
 
 ## Contact
 
-- Website [csaavedras](https://github.com/csaavedras)
+- Website [csaavedras](https://devchallenges.io/portfolio/csaavedras)
 - GitHub [@csaavedras](https://github.com/csaavedras)
